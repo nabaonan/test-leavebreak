@@ -48,5 +48,12 @@
 }
 
 .dialog{
+  top: 30%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+  &.blue{
+    color: black;
+    background-color: #61dafb;
+  }
   /* background-color: #f9f9f9; */
 }

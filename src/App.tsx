@@ -2,7 +2,7 @@
  * @Author: nabaonan
  * @Date: 2024-05-15 22:42:30
  * @LastEditors: nabaonan
- * @LastEditTime: 2024-05-16 00:05:31
+ * @LastEditTime: 2024-05-28 00:26:01
  * @FilePath: /test-leavebreak/src/App.tsx
  * @Description: 
  */
@@ -19,6 +19,7 @@ import {
 
 import Other from './Other'
 import TestBlock from './TestBlock';
+import TestPrompt from './TestPrompt';
 
 
 function App() {
@@ -28,23 +29,12 @@ function App() {
 
       <Router>
         <div>
-
-
-
-
-
-
           <Link to="/" className='link'>首页</Link>
-
-
           <Link to="/other" className='link'>其他页面</Link>
           <Link to="/block" className='link'>block的方式</Link>
-
-
+          <Link to="/prompt" className='link'>prompt的方式</Link>
           <Switch>
             <Route exact path="/">
-
-
               <div>
                 <a target="_blank">
                   <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -67,6 +57,10 @@ function App() {
             </Route>
             <Route path="/block">
               <TestBlock></TestBlock>
+            </Route>
+
+            <Route path="/prompt">
+              <TestPrompt></TestPrompt>
             </Route>
           </Switch>
         </div>
