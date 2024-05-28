@@ -55,5 +55,10 @@
     color: black;
     background-color: #61dafb;
   }
+
+  &.red{
+    color: white;
+    background-color: #f00;
+  }
   /* background-color: #f9f9f9; */
 }
